@@ -9,8 +9,8 @@
     <div fxLayout="column">
         <h3>Bucador</h3>
         <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Number</mat-label>
-            <input type="text" placeholder="Pick one" aria-label="Number" matInput [(ngModel)]="termino"
+            <mat-label>Heroe</mat-label>
+            <input type="text" matInput [(ngModel)]="termino"
                 [matAutocomplete]="auto" (input)="buscando()">
             <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"
                 (optionSelected)="opcionSeleccionada($event)">
